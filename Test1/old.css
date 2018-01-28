@@ -1,0 +1,21 @@
+body .psewdo1 {
+  width: 130px;
+  height: 216px;
+  /*border: 2px solid #f11;*/
+  float: left;
+}
+
+body .psewdo2 {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  width: 80%;
+  height: 216px;
+  border: 2px solid #f11;
+
+  background-color: #fff;
+  opacity: 0.5;
+  z-index: -0.5;
+}
+
+
