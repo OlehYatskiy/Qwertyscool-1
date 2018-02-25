@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Task</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/reg-form.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700|Nanum+Myeongjo:400,700|Slabo+27px" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="outer_content clearfix">
+        <header class="clearfix">
+            <img src="https://assets.htmlacademy.ru/img/logo.v2.svg" width="124" height="36" alt="HTMLAcademy">
+            <div class="autoriz-reg">
+              <div class='logOut clearfix'><!--action="#"-->
+                <span>Welcome user</span>
+                <button>LogOut</button>
+              </div>
+              <div class="autoriz-reg-form" name="logIn">
+                <input class="submit" type="submit" name="submit" value="" id="auth">
+                <span>Login:</span>
+                <input type="text" name="loginfield" id="auth_login">
+                <span>Password:</span>
+                <input type="password" name="passfield" id="auth_password">
+                <span><i>Don't have an account?:</i> <span id="reg" onclick="displayRegisterPopup()">Register</span></span>
+                <span class="warning">Warning!</span>
+              </div>
+            </div>
+            <ul class="subheader">
+                <li><a href="#">Mauris</a></li>
+                <li><a href="#">Sit</a></li>
+                <li><a href="#">Fement</a></li>
+              </ul>
+            </header>
+        <div class="container-main clearfix">
+          <div class="sidebar_outer" id="sidebar_outer">
+            <div class="sidebar" id="sidebar">
+            <div class="burger"  id="burger" > <!--onclick="displayMenu()"-->
+              <span class="divide"></span>
+              <span class="divide"></span>
+              <span class="divide"></span>
+            </div>
+            <img id="settings-icon" onclick="displaySettings()" src="img/wheel-392716_6402.png" width="25" alt="Settings">
+              <ul class="menu " id="sidebarMenu" >
+                <li>
+                  <ul id="settingsList">
+                    <form name="settingsList">
+                    <li>
+                      <span>Font size:</span>
+                      <div class="range-label selectors">
+                        <span>8 16 24</span>
+                        <input type="range" min="8" max="24" value="18" list="tickmarks" oninput="changeFontSize()" name="fontSelector">
+                          <datalist id="tickmarks">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                            <option value="11">
+                            <option value="12">
+                            <option value="13">
+                            <option value="14">
+                            <option value="15">
+                            <option value="16">
+                            <option value="17">
+                            <option value="18">
+                            <option value="19">
+                            <option value="20">
+                            <option value="21">
+                            <option value="22">
+                            <option value="23">
+                            <option value="24"></datalist>
+                      </div>
+                    </li>
+                    <li>
+                      <span>Background color:</span>
+                      <input class="selectors" type="color" value="#fff" size="9" maxlength="20" oninput="changeBackgroundColor()" name="backgroundColorSelector" >
+                    </li>
+                    <li>
+                      <span>Font family:</span>
+                      <select class="inputSize selectors" name="familySelector" onchange="changeFontFamily()">
+                        <option value="Nanum Myeongjo">Nanum Myeongjo</option>
+                        <option value="Bitter">Bitter</option>
+                        <option value="'Slabo 27px'">Slabo 27px</option>
+                        <option value="Times">Times</option>
+                        <option value="serif">default</option>
+                      </select>
+                    </li>
+                    <li>
+                      <input class="inputSize selectors" name="remove" type="button" value="Remove paragraph" onclick="removeParag()">
+                    </li>
+                  </form>
+                  </ul>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Posts</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Categories</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="content">
+            <h1>In eu mi bibendum</h1>
+            <h3>At tempor commodo</h3>
+            <p>   Id ornare arcu odio ut sem nulla pharetra diam.
+             Praesent tristique magna sit amet purus. Mattis
+             pellentesque id nibh tortor. Mauris pharetra et ultrices neque.
+             Sit amet nisl suscipit adipiscing bibendum est ultricies.
+             Rhoncus urna neque viverra justo nec ultrices dui.
+             Posuere lorem ipsum dolor sit amet consectetur adipi
+             scing elit. Aenean euismod elementum nisi quis. Leo a
+             diam sollicitudin tempor id eu nisl. Hac habitasse
+             platea dictumst quisque.</p>
+
+            <h3>Vel orci porta</h3>
+            <p>   Malesuada fames ac turpis egestas. Ante metus dictum
+               at tempor commodo ullamcorper a. Tincidunt augue interdum
+                velit euismod in pellentesque.Ac orci phasellus egestas
+                 tellus rutrum tellus pellentesque eu tincidunt. Sed
+                 risus ultricies tristique nulla aliquet enim tortor at. At erat pellentesque adipiscing commodo elit at imperdiet dui. Proin fermentum leo vel orci porta non pulvinar. Posuere morbi leo urna molestie at. Vitae justo eget magna fermentum iaculis eu non. Senectus et netus et malesuada fames ac turpis egestas.</p>
+
+            <h3>Et ligula ullamcorper</h3>
+            <p>   Id ornare arcu odio ut sem nulla pharetra diam.
+               Praesent tristique magna sit amet purus. Mattis
+               pellentesque id nibh tortor. Mauris pharetra et
+               ultrices neque. Sit amet nisl suscipit adipiscing
+               bibendum est ultricies. Rhoncus urna neque viverra
+                justo nec ultrices dui. Posuere lorem ipsum dolor
+                 sit amet consectetur adipiscing elit. Aenean
+                 euismod elementum nisi quis. Leo a diam
+                 sollicitudin tempor id eu nisl. Hac habitasse
+                  platea dictumst quisque </p>
+
+          </div>
+      <script src="script/Sidebar.js"></script>
+        </div>
+      </div>
+      <footer>
+        <div class="social">
+          <a href=""><img class="icon" src="https://image.flaticon.com/icons/svg/23/23931.svg" alt="Twitter" width=25></a>
+          <a href=""><img class="icon" src="https://image.flaticon.com/icons/svg/23/23747.svg" alt="Facebook" width=25></a>
+        </div>
+        <ul id="footerlist">
+          <li><a href="#">Posts</a></li>
+          <li><a href="">Media</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="#">Back</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+        <div>©by OlehYatskiy</div>
+    </footer>
+  </div><!--wrapper_end-->
+
+  <div id="reg-form" >
+    <div class="popup">
+      <img src="img/660989-delete_button-512.png" width=25 onclick="hideRegisterPopup()">
+      <h2>Register form</h2>
+        <div class="form" action="#" name="register">
+          <span>Enter your valid e-mail:</span>
+          <input type="text" name="loginfield" id="register_login"><!--text(login)-->
+          <span class="warning e-mail">warning</span>
+          <span>Enter password:</span>
+          <input type="password" name="passfield" id="register_password">
+          <span class="warning passw">warning</span>
+          <span>Confirm password:</span>
+          <input type="password" name="passfield" id="register_confirmation">
+          <span class="warning confirm">warning</span>
+          <input id="sign-up" type="submit" name="submit" value="Register" >
+          <span class="warning main-warning"></span>
+        </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAAUZVChwYt3DtuggaRat5_mThKRLoaemE",
+      authDomain: "test-web-project-8e32e.firebaseapp.com",
+      databaseURL: "https://test-web-project-8e32e.firebaseio.com",
+      projectId: "test-web-project-8e32e",
+      storageBucket: "test-web-project-8e32e.appspot.com",
+      messagingSenderId: "237736518357"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+  <!-- <script src="/__/firebase/4.10.0/firebase-app.js"></script> -->
+  <!-- <script src="/__/firebase/4.10.0/firebase-auth.js"></script> -->
+  <!-- <script src="/__/firebase/init.js"></script> -->
+
+
+  <script src="script/Index.js"></script>
+
+  </body>
+</html>
